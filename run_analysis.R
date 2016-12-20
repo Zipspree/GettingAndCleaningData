@@ -8,20 +8,20 @@ unzip(zipfile="./data/Dataset.zip",exdir="./data")
 
 # Read the files into R:
 
-	# Read the trainings tables:
+	# Step 1: Read the trainings tables:
 x_train <- read.table("./data/UCI HAR Dataset/train/X_train.txt")
 y_train <- read.table("./data/UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table("./data/UCI HAR Dataset/train/subject_train.txt")
 
-	# Read the testing tables:
+	# Step 2: Read the testing tables:
 x_test <- read.table("./data/UCI HAR Dataset/test/X_test.txt")
 y_test <- read.table("./data/UCI HAR Dataset/test/y_test.txt")
 subject_test <- read.table("./data/UCI HAR Dataset/test/subject_test.txt")
 
-	# Read the feature vector:
+	# Step 3: Read the feature vector:
 features <- read.table('./data/UCI HAR Dataset/features.txt')
 
-	# Read the activity labels:
+	# Step 4: Read the activity labels:
 activityLabels = read.table('./data/UCI HAR Dataset/activity_labels.txt')
 
 
@@ -46,17 +46,17 @@ setCombined <- rbind(merge_train, merge_test)
 
 # Extract meanurements on mean and standard deviation for each measurement:
 
-	# Read column names:
+	# Step 1: Read column names:
 colNames <- colnames(setCombined)
 
-	# Create vector defining i.d., mean and standard deviation:
+	# Step 2: Create vector defining i.d., mean and standard deviation:
 mean_and_std <- (grepl("activityId" , colNames) | 
                  grepl("subjectId" , colNames) | 
                  grepl("mean.." , colNames) | 
                  grepl("std.." , colNames) 
                  )
 
-	# Make subset from setCombined:
+	# Step 3: Make subset from setCombined:
 setMeanAndStd <- setCombined[ , mean_and_std == TRUE]
 
 
