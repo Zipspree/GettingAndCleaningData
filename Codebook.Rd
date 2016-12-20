@@ -13,7 +13,7 @@ Description:
       activityID - identifies the corresponding activity for which a record was made, including: 
       1 WALKING; 2 WALKING_UPSTAIRS; 3 WALKING_DOWNSTAIRS; 4 SITTING; 5 STANDING; 6 LAYING.
   
-   Feature columns include the mean of all the mean and standard deviation features that are summarized in the data set.
+   Feature columns include the mean of all mean and standard deviation features that are summarized in the source data set.
 
 Details:
         
