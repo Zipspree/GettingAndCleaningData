@@ -101,7 +101,7 @@ Data is from Human Activity Recognition Using Smartphones Data Set.  Human Activ
     acceleration and 3-axial angular velocity at a constant rate of 50Hz. The obtained dataset has been randomly partitioned into 
     two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-For each record in the dataset it is provided: 
+For each record in the original dataset it was provided: 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
 - Triaxial Angular velocity from the gyroscope. 
 - A 561-feature vector with time and frequency domain variables. 
@@ -109,13 +109,12 @@ For each record in the dataset it is provided:
 - An identifier of the subject who carried out the experiment.
 }
 \source{
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+The orginal data for the assignment can be found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 }
 \references{
-%%  ~~ possibly secondary sources and usages ~~
+Citation Request:
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity 
+  Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine 
+  Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 }
-\examples{
-data(secondTidySet)
-## maybe str(secondTidySet) ; plot(secondTidySet) ...
-}
-\keyword{datasets}
+\End.
