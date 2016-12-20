@@ -6,7 +6,7 @@ Contains the merged training and test data sets for "Human Activity Recognition 
     and provide the average of each variable for each activity and each subject.
 }
 \format{
-  A data frame with 180 observations on the following 82 variables.
+  A data frame with 180 observations on the following 82 variables:
   \describe{
     \item{\code{subjectId}}{a numeric vector}
     \item{\code{activityId}}{a numeric vector}
