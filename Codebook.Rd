@@ -1,7 +1,9 @@
 \name{secondTidySet}
 \docType{data}
 \description{
-Contains the merged training and test data sets for "Human Activity Recognition Using Smartphones Data Set", modified to appropriately label variable names and provide the average of each variable for each activity and each subject.
+Contains the merged training and test data sets for "Human Activity Recognition Using Smartphones Data Set", modified to 
+  extract measurements on mean and standard deviation for each measurement, appropriately label variable names, 
+    and provide the average of each variable for each activity and each subject.
 }
 \format{
   A data frame with 180 observations on the following 82 variables.
@@ -91,7 +93,13 @@ Contains the merged training and test data sets for "Human Activity Recognition 
   }
 }
 \details{
-Data is from Human Activity Recognition Using Smartphones Data Set.  Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+Data is from Human Activity Recognition Using Smartphones Data Set.  Human Activity Recognition database built from 
+  the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with 
+    embedded inertial sensors. The experiments have been carried out with a group of 30 volunteers within an age bracket 
+    of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+    wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear 
+    acceleration and 3-axial angular velocity at a constant rate of 50Hz. The obtained dataset has been randomly partitioned into 
+    two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 For each record in the dataset it is provided: 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
