@@ -1,6 +1,6 @@
-\name{secondTidySet}
-\docType{data}
-\description{
+Name: secondTidySet
+docType: data
+Description:
 Contains the merged training and test data sets for "Human Activity Recognition Using Smartphones Data Set", modified to 
   extract measurements on mean and standard deviation for each measurement, appropriately label variable names, 
     and provide the average of each variable for each activity and each subject.
@@ -9,8 +9,8 @@ Contains the merged training and test data sets for "Human Activity Recognition 
       activityID - identifies the corresponding activity for which a record was made, including: 1 WALKING 2 WALKING_UPSTAIRS 
         3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
   Feature columns include the mean of all the mean and standard deviation features that are summarized in the data set.
-}
-\details{
+
+Details:
 Data is from Human Activity Recognition Using Smartphones Data Set.  Human Activity Recognition database built from 
   the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with 
     embedded inertial sensors. The experiments have been carried out with a group of 30 volunteers within an age bracket 
@@ -25,13 +25,13 @@ For each record in the original dataset it was provided:
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
-}
-\source{
+
+Source:
 The orginal data for the assignment can be found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-}
-\format{
+
+Format:
   A data frame with 180 observations on the following 82 variables:
-  \describe{
+  
     \item{\code{subjectId}}{a numeric vector}
     \item{\code{activityId}}{a numeric vector}
     \item{\samp{tBodyAcc-mean()-X}}{a numeric vector}
@@ -114,12 +114,11 @@ The orginal data for the assignment can be found here: https://d396qusza40orc.cl
     \item{\samp{fBodyBodyGyroJerkMag-std()}}{a numeric vector}
     \item{\samp{fBodyBodyGyroJerkMag-meanFreq()}}{a numeric vector}
     \item{\code{activityType}}{a numeric vector}
-  }
 
-\references{
+References:
 Citation Request:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity 
   Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine 
   Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
-}
-\End.
+
+End.
